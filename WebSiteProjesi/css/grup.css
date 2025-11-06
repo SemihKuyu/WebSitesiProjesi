@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0387c6;
+    font-family: sans-serif;
+}
+
+
+.header {
+   position: fixed;
+    top: 0;
+    right: 0;
+    right: 60px; 
+    width: 45%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: black;
+    border-radius: 50px;
+    margin: 15px;
+    padding: 0 20px;
+    gap: 40px;
+    
+}
+
+.anaLogo {
+    position: absolute;
+    top: 20px;
+    left: 12%;
+    width: 80px;
+    background: black;
+    border-radius: 25px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+.link {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.link li a {
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    transition: 0.3s;
+}
+
+.link li a:hover {
+    color: #0387c6;
+}
+
+
+.uyelik {
+    background-color: #0387c6;
+    border-radius: 5px;
+    padding: 8px 12px;
+    color: white !important;
+}
+
+.grup{
+    background-color: #0387c6;
+    border-radius: 5px;
+    padding: 8px 12px;
+    color: white !important;
+}
+
+.klup{
+    background-color: #0387c6;
+    border-radius: 5px;
+    padding: 8px 12px;
+    color: white !important;
+}
+
+.iletisim{
+    background-color: #0387c6;
+    border-radius: 5px;
+    padding: 8px 12px;
+    color: white !important;
+}
+
+
+.main{
+    margin-top: 150px;
+}
+
+/*grup1*/
+.grupFoto{
+    background-color: #00000048;
+    max-width: 100%;
+    height: 500px;
+    margin-top: 200px;
+    
+}
+
+.grupFoto img{
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 40px;
+    width: 300px;
+    border-radius: 50px;
+
+}
+
+.grupFoto h1{
+    position: absolute;
+    justify-self: center;
+    margin-top: 150px;
+    margin-right: 950px;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+
+.grupFoto p{
+    position: absolute;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+    max-width: 50%;
+    justify-self: center;
+    margin-top: 320px;
+    margin-right: 250px;
+    z-index: -1;
+}
+
+/*grup(1)*/
+
+.grupFoto1{
+    background-color: #0000006e;
+    max-width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    
+}
+
+.grupFoto1 img{
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 40px;
+    width: 300px;
+    border-radius: 50px;
+
+}
+
+.grupFoto1 h1{
+    position: absolute;
+    justify-self: center;
+    margin-top: 100px;
+    margin-right: 800px;
+    font-size: 40px;
+    font-family: sans-serif;
+    z-index: -1;
+}
+
+.grupFoto1 p{
+    position: absolute;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+    max-width: 50%;
+    justify-self: center;
+    margin-top: 200px;
+    margin-right: 250px;
+    z-index: -1;
+}
+ 
+/*grup2*/
+
+.grupFoto2{
+    background-color: #00000083;
+    max-width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    
+}
+
+.grupFoto2 img{
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 40px;
+    width: 300px;
+    height: 380px;
+    border-radius: 50px;
+
+}
+
+.grupFoto2 h1{
+    position: absolute;
+    justify-self: center;
+    margin-top: 140px;
+    margin-right: 650px;
+    font-size: 40px;
+    font-family: sans-serif;
+    z-index: -1;
+}
+
+.grupFoto2 p{
+    position: absolute;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+    max-width: 50%;
+    justify-self: center;
+    margin-top: 300px;
+    margin-right: 250px;
+    z-index: -1;
+}
+
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+
+
+
+
+.footer p a{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    border-radius: 5px;
+    padding: 8px 12px;
+    color: white;
+    max-width: 100%;
+}
+
+
+
+/*responsive*/
+
+@media (max-width: 768px) {
+    .anaLogo {
+        width: 100px;
+        top: 15px;
+        left: 15px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+        border-radius: 30px;
+        margin-left: 250px;
+        min-width: 200px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .link {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .link li a {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .header {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .link {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .link li a {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+
+    .hakkimizda {
+        padding: 6px 10px;
+    }
+}

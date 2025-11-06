@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0387c6;
+    font-family: sans-serif;
+}
+
+
+.header {
+   position: fixed;
+    top: 0;
+    right: 0;
+    right: 60px; 
+    width: 45%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: black;
+    border-radius: 50px;
+    margin: 15px;
+    padding: 0 20px;
+    gap: 40px;
+    
+}
+
+.anaLogo {
+    position: absolute;
+    top: 20px;
+    left: 12%;
+    width: 80px;
+    background: black;
+    border-radius: 25px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+.link {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.link li a {
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    transition: 0.3s;
+}
+
+.link li a:hover {
+    color: #0387c6;
+}
+
+
+.uyelik {
+    background-color: #0387c6;
+    border-radius: 5px;
+    padding: 8px 12px;
+    color: white !important;
+}
+
+.grup{
+    background-color: #0387c6;
+    border-radius: 5px;
+    padding: 8px 12px;
+    color: white !important;
+}
+
+.klup{
+    background-color: #0387c6;
+    border-radius: 5px;
+    padding: 8px 12px;
+    color: white !important;
+}
+
+.iletisim{
+    background-color: #0387c6;
+    border-radius: 5px;
+    padding: 8px 12px;
+    color: white !important;
+}
+
+
+.main{
+    margin-top: 150px;
+}
+
+
+
+.iletisim_1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 60px 10%;
+  flex-wrap: wrap; 
+}
+
+.sol_menu {
+  flex: 1;
+  min-width: 280px;
+  margin-top: 150px;
+}
+
+.sol_menu h2 {
+  color: #000000b4;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.sol_menu p {
+  line-height: 1.6;
+  color: #ddd;
+  font-family: 'Franklin Gothic Medium';
+}
+
+.sag_menu {
+  flex: 1;
+  min-width: 300px;
+  background-color: #1a1a1a;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  margin-top: 150px;
+}
+
+.sag_menu label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #0387c6;
+}
+
+.sag_menu input,
+.sag_menu textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  background-color: #222;
+  color: white;
+}
+
+.sag_menu button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #0387c6;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sag_menut button:hover {
+  background-color: #0387c6;
+}
+
+
+
+
+
+
+.footer{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    bottom: 0px;
+}
+
+.footer p a{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    border-radius: 5px;
+    padding: 8px 12px;
+    color: white;
+    max-width: 100%;
+}
+
+/*responsive*/
+
+@media (max-width: 768px) {
+    .anaLogo {
+        width: 100px;
+        top: 15px;
+        left: 15px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+        border-radius: 30px;
+        margin-left: 250px;
+        min-width: 200px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .link {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .link li a {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .header {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .link {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .link li a {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+
+    .hakkimizda {
+        padding: 6px 10px;
+    }
+}
